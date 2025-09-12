@@ -75,6 +75,7 @@ section {
 .skills{
     color: #fff;
     padding: 50px 20px;
+    height: 100vh;
 }
 
 .skills .container-section {
