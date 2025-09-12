@@ -40,7 +40,7 @@ html{
     padding: 15px 20px;
 }
 .container-header header .logo a{
-    font-family: 'Righteous';
+    font-family: 'Righteous', cursive;
     font-size: 36px;
     color: #1cb698;
     text-decoration: none;

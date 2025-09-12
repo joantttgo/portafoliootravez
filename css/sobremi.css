@@ -45,6 +45,7 @@ html{
     font-size: 36px;
     color: #1cb698;
     text-decoration: none;
+    transition: 2s;
 }
 
 .container-header header ul{
@@ -175,9 +176,9 @@ footer .redes a{
     width: 42px;
     height: 42px;
     line-height: 42px;
-    margin: 10px;
+    margin: 40px;
     font-size: 20px;
-    transition: all 0.3s ease;
+    transition: 4s;
 }
 
 footer .arriba{
