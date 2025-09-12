@@ -81,6 +81,7 @@ section {
 .skills .container-section {
     max-width: 1199px;
     margin: auto;
+    height: 100vh;
 }
 
 .skills h2{
@@ -197,9 +198,9 @@ footer .redes a {
     width: 42px;
     height: 42px;
     line-height: 42px;
-    margin: 10px;
+    margin: 50px;
     font-size: 20px;
-    transition: all 0.3s ease;
+    transition: 4s;
 }
 
 footer .redes a:hover {
