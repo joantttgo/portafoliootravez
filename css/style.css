@@ -231,7 +231,10 @@ footer .redes a:hover{
     }
 
     footer .redes a{
-        margin: 10px;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 18px;
     }
     #menu-toggle{
         display: none;

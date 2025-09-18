@@ -97,6 +97,7 @@ h1{
     gap: 20px;
     padding: 40px;
     justify-self: center;
+    place-content: center;
 }
 
 .ecard{
@@ -189,6 +190,19 @@ footer .redes a:hover{
 }
 
 @media (max-width: 768px){
+    .container-header header{
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .container-header header nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .container-header header .logo a{
+        font-size: 28px;
+    }
     .portafolio{
         height: 150vh;
     }
@@ -238,6 +252,13 @@ footer .redes a:hover{
         padding: 10px 15px;
         display: block;
         text-align: left;
+    }
+
+    footer .redes a{
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 18px;
     }
 
 

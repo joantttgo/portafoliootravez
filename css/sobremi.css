@@ -179,14 +179,13 @@ footer{
     width: 100%;
 }
 
-footer .redes{
+footer.redes{
     margin-bottom: 20px;
 }
 
 footer .redes a{
     color: #fff;
     display: inline-block;
-    border: 1px solid #fff;
     border-radius: 100%;
     width: 42px;
     height: 42px;
@@ -221,18 +220,16 @@ footer .redes a:hover{
 @media (max-width: 768px){
     .container-header header{
         flex-direction: column;
-        align-items: center;
+        padding: 10px;
     }
-
+    
     .container-header header nav ul{
         flex-direction: column;
-        width: 100%;
-        padding: 10px 0;
-        text-align: center;
+        gap: 10px;
     }
-
+    
     .container-header header .logo a{
-        font-size: 10px 0;
+        font-size: 28px;
     }
 
     .sobremi{
