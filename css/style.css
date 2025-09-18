@@ -99,13 +99,12 @@ html{
 
 .container-banner .container-img img{
     margin-top: 40px;
-    border: 10px solid #1cb698;
+    border: 10px solid #f2f2f2;
     display: block;
     width: 15em;
     height: 15em;
     margin: auto;
     border-radius: 100%;
-    
 }
 
 .inicio.container-banner h1{
@@ -194,6 +193,9 @@ footer .redes a:hover{
 }
 
 @media (max-width: 768px){
+    .inicio{
+        height: 100vh;
+    }
     .container-header header{
         flex-direction: column;
         padding: 10px;
@@ -215,7 +217,7 @@ footer .redes a:hover{
 
     .inicio .container-banner{
         max-width: 90%;
-        border-radius: 15px;
+        border-radius: 40px;
     }
 
     .inicio .container-banner h1{
@@ -279,6 +281,16 @@ footer .redes a:hover{
         padding: 10px 15px;
         display: block;
         text-align: left;
+    }
+
+    .container-banner .container-img img{
+        margin-top: 40px;
+        border: 10px solid #f2f2f2;
+        display: block;
+        width: 15em;
+        height: 15em;
+        margin: auto;
+        border-radius: 100%;
     }
 }
 
