@@ -64,6 +64,19 @@ html{
     color: #1cb698;
 }
 
+#menu-toggle{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #1cb698;
+    margin-left: auto;
+    border-radius: 20px;
+}
+
 
 
 section{
