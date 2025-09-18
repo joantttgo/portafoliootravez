@@ -233,6 +233,49 @@ footer .redes a:hover{
     footer .redes a{
         margin: 10px;
     }
+    #menu-toggle{
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        color: #499390;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 300;
+    }
+
+    .container-header header .nav ul{
+        display: none;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0, 0.4);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        padding: 10px 0;
+        border-radius: 6px;
+        box-shadow: 0 4px 10px rgb(0, 0, 0, 0.4);
+        z-index: 250;
+    }
+
+    #menu-toggle:checked ~.nav ul{
+        display: flex;
+    }
+
+    .container-header header .nav ul li{
+        margin: 5px 0;
+    }
+
+    .container-header header .nav ul li a{
+        color: #fff;
+        padding: 10px 15px;
+        display: block;
+        text-align: left;
+    }
 }
 
 @media (max-width: 480px){

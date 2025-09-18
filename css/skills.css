@@ -85,52 +85,52 @@ section {
     margin-top: 80px;
 }
 
-.skills{
+.skill{
     color: #fff;
     padding: 50px 20px;
     height: 100vh;
 }
 
-.skills .container-section {
+.skill .container-section {
     max-width: 1199px;
     margin: auto;
     height: 100vh;
 }
 
-.skills h2{
+.skill h2{
     font-size: 48px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     padding: 20px 0;
 }
 
-.skills .fila{
+.skill .fila{
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
 }
 
-.skills .fila .col{
+.skill .fila .col{
     flex: 1;
     min-width: 300px;
     padding: 0 20px;
 }
 
-.skills .fila .col h3{
+.skill .fila .col h3{
     font-size: 28px;
     font-family: 'Righteous', cursive;
     margin-bottom: 25px;
     text-align: center;
 }
 
-.skills .skills span{
+.skill .skills span{
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
 }
 
-.skills .skills .barra-skills{
+.skill .skills .barra-skills{
     height: 8px;
     width: 80%;
     background-color: #f0f3f7;
@@ -140,7 +140,7 @@ section {
     overflow: hidden;
 }
 
-.skills .skills .progreso{
+.skill .skills .progreso{
     background-color: #1cb698;
     position: absolute;
     top: 0;
@@ -149,7 +149,7 @@ section {
     width: 0; /* Animación desde 0 */
 }
 
-.skills .skills .barra-skills span{
+.skill .skills .barra-skills span{
     position: absolute;
     height: 40px;
     width: 40px;
@@ -235,3 +235,104 @@ footer .redes a:hover{
 @keyframes creatividad  { from {width: 0;} to {width: 90%;} }
 @keyframes dedicacion   { from {width: 0;} to {width: 70%;} }
 @keyframes proyectos    { from {width: 0;} to {width: 90%;} }
+
+
+@media screen and (max-width: 768px){
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-header header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-header header ul{
+        flex-direction: column ;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .container-header header header nav ul li{
+        margin: 10px 0;
+    }
+
+    .skill{
+        padding: 40px 15px;
+    }
+
+    .skill h2{
+        font-size: 36px;
+    }
+
+    .skill .fila{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .skill .fila .col{
+        padding: 0;
+        min-width: 100%;
+    }
+
+    .skill .fila .col h3{
+        font-size: 24px;
+    }
+
+    .skill .skills .barra-skills{
+        width: 100%;
+    }
+
+    .skill .skills .barra-skills span{
+        font-size: 12px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        top: -15px;
+        right: -12px;
+    }
+
+    #menu-toggle{
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        color: #499390;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 300;
+    }
+
+    .container-header header .nav ul{
+        display: none;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0, 0.4);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        padding: 10px 0;
+        border-radius: 6px;
+        box-shadow: 0 4px 10px rgb(0, 0, 0, 0.4);
+        z-index: 250;
+    }
+
+    #menu-toggle:checked ~.nav ul{
+        display: flex;
+    }
+
+    .container-header header .nav ul li{
+        margin: 5px 0;
+    }
+
+    .container-header header .nav ul li a{
+        color: #fff;
+        padding: 10px 15px;
+        display: block;
+        text-align: left;
+    }
+}
